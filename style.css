@@ -1,0 +1,245 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+     font-family: 'Gabarito', sans-serif;
+      
+}
+.navbar{
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: solid black 1px;
+   gap: 10px;
+   flex-direction: row;
+   align-items: center;
+   position:sticky;
+   top: 0;
+   background-color: lightgrey;
+   z-index: 1;
+   
+}
+.navbar__s1__title{
+   color: #7e0cca;
+}
+.navbar__s2{
+   padding: 10px;
+   border: solid black 1px;
+   border-radius: 30px;
+   width: 50%;
+   display: flex;
+   gap: 10px;
+   background-color: white;
+}
+.navbar__s2 input{
+   border: none;
+   width: 100%;
+   font-size: 16px;
+   align-items: center;
+   background-color: transparent;
+}
+.navbar__s2 input:focus{
+   outline: none;
+
+}
+.navbar__s3{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   align-items: center;
+   
+}
+.navbar__s3__button1{
+   padding: 7px;
+   color: #892DE1;
+   background-color: white;
+   border: solid #892DE1 1px;
+   border-radius: 5px;
+}
+.navbar__s3__button2{
+   padding: 7px;
+   color: white;
+   background-color: #892DE1;
+   border: solid #892DE1 1px;
+   border-radius: 5px;
+}
+.mylearning{
+   position: relative;
+   cursor: pointer;
+
+}
+.mylearning__popup{
+   position: absolute;
+   background-color: white;
+   border: solid black 1px;
+   width: 100px;
+   top:150% ;
+   padding: 20px;
+   right: 0;
+   display: none;
+}
+.mylearning:hover .mylearning__popup{
+   display: block;
+}
+.recommended__t{
+   background-color: antiquewhite;
+   padding: 9px;
+   
+}
+.recommended__t__2{
+   margin-top: 5px;
+}
+.recommended__title{
+   margin-top: 10px;
+}
+.categories{
+   display: flex;
+   border-bottom: solid balck 1px;
+   padding: 10px;
+   justify-content: space-around;
+}
+.categories p{
+   background-color: rgb(179, 38, 179);
+   border-radius:30px ;
+   color: white;
+   padding: 10px;
+   cursor: pointer;
+   border: solid rgb(179, 38, 179) 1px;
+}
+.categories p:hover{
+   transition: 1s;
+   background-color: transparent;
+   color:rgb(179, 38, 179); 
+   border: solid rgb(179, 38, 179) 1px;
+}
+.sale-img{
+   position: relative;
+}
+.sale-img img{
+   width: 100%;
+}
+.sale-img__offer{
+   width: 35%;
+   border: solid black 2px;
+   background-color: white;
+   padding: 2%;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   animation-name: zoom;
+   animation-duration: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+@keyframes zoom{
+   0%{
+      transform: scale(0);
+      opacity: 0;
+   }
+   100%{
+      
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+.recommended{
+   padding: 10px;
+}
+.recommended__container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 10px;
+   
+
+}
+.recommended__container div{
+
+   border: solid black 2px;
+   padding: 5px;
+   margin: 5px;
+}
+.course-card{
+   width: 250px;
+   
+}
+.course-card p{
+   
+   margin-top: 10px;
+   margin-bottom: 2px;
+}
+.course-card img{
+   width: 100%;
+   height: 50%;
+}
+.toppics{
+   padding: 10px;
+}
+.toppics__container{
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+   flex-wrap: wrap;
+   
+}
+.toppics__container p{
+   border: solid gray 2px;
+   padding: 10px;
+   flex-grow: 1;
+   flex-basis: 25%;
+}
+.popular{
+   padding: 10px;
+}
+.popular__title{
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.popular__container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+.footer{
+   padding: 30px;
+   background-color: black;
+   color: white;
+}
+.footer__one__s1{
+   border-right: solid white 1px;
+   padding-right: 30px;
+}
+.footer__one__s2{
+   padding-left: 30px;
+}
+.footer__one{
+   display: flex;
+   gap: 10px;
+   
+
+}
+.footer__one p{
+   margin: 20px;
+}
+.footer__two{
+   display: flex;
+   align-items: center;
+   margin: 50px;
+   justify-content: space-between;
+}
+@media screen and (max-width:600px) {
+   body{
+      font-size: 10px;
+   }
+}
+@media screen and (max-width:500px) {
+  .course-card{
+   flex-basis:40%;
+  }
+  .categories{
+
+  }
+   
+}
