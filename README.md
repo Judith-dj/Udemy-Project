@@ -6,7 +6,8 @@ Technologies Used
 -HTML for structuring the webpage.
 -CSS for styling and layout management.
 
-Check out this 
+Check out this 👇
+
 https://lnkd.in/gpa_hQ6C
 
 Thanks for visiting my project!
